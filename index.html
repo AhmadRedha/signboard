@@ -1,1 +1,54 @@
-Hello World:)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Signage</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://broadsign.com/static/6245a76fbab334520d2f668c897f5003/2b2ba/digital-signage-platform.png') no-repeat center center/cover;
+            z-index: -1;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 150px;
+        }
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3em;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out infinite alternate;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <img src="logo.png" alt="Logo" class="logo">
+    <div class="title">SignBoard Innovation Of new Digital signage systems</div>
+</body>
+</html>
